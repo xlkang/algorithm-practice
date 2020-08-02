@@ -1,0 +1,13 @@
+{
+  "name": "auto-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xlkang",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync main --files '**/*'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
