@@ -9,15 +9,6 @@
  * 这里只是js模拟实现算法，并不代表js中需要如此操作
  */
 
- /** 
-  * a[x][y]  左上角为坐标系原点
-  * 
-  * 1 2 8 9  
-  * 2 4 9 12
-  * 4 7 10 13
-  * 6 8 11 15
-  */
-
 const testStr = "We are  happy"
 
 // 时间复杂度O(n)
@@ -49,6 +40,5 @@ function replaceSpace (str) {
     return newStr;
 }
 
-
-const result = replaceSpace(testStr)
-console.log(result)
+// const result = replaceSpace(testStr)
+// console.log(result)
