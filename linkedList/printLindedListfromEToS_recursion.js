@@ -1,5 +1,5 @@
 /**
- * 《剑指》P58 面试题6
+ * 《剑指》P58 面试题6 递归实现
  * 从尾到头打印链表
  * 
  * 输入一个链表的头节点，从尾到头反过来打印出每个节点的值。
@@ -20,23 +20,20 @@ node2.next = node3;
  * @description 从尾到头打印节点
  * @param {Node} pNode 
  */
-function printLindedListfromEToS(pNode) {
-    let node = pNode;
-    const nodeStack = []
-
-    while(node) {
-        nodeStack.push(node)
-        node = node.next
-    }
-
-    while(nodeStack.length){
-        const thisNode = nodeStack.pop();
-        printNode(thisNode)
-    }
+function printLindedListfromEToS_recursion(node) {
+    printNext(node)
 }
 
-function printNode(node) {
+function printNext (node){
+    if(node.next) {
+        printNext(node.next)
+    }
+    printNode(node)
+    return
+}
+
+function printNode (node) {
     console.log(node.element)
 }
 
-// printLindedListfromEToS(linkedList.head)
+printLindedListfromEToS_recursion(linkedList.head)
