@@ -15,4 +15,5 @@ yarn start # 运行browser-sync启动http server
     2. [查询数组中重复的数字(不修改数组)](https://github.com/xlkang/algorithm-practice/blob/master/main/findRepeatNumDontModify.js)
     3. [查询二维数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/main/findTwoDigitArray.js)
     4. [替换字符串中的空格](https://github.com/xlkang/algorithm-practice/blob/master/main/replaceSpaceOfString.js)
-    5. [合并两个排序的数组](https://github.com/xlkang/algorithm-practice/blob/master/main/combineSortedArrays.js)
+    5. [高亮显示字符串中指定区间字符](https://github.com/xlkang/algorithm-practice/blob/master/main/highlightWordOfString.js)
+    6. [合并两个排序的数组](https://github.com/xlkang/algorithm-practice/blob/master/main/combineSortedArrays.js)
