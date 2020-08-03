@@ -5,7 +5,7 @@
   "author": "xlkang",
   "license": "MIT",
   "scripts": {
-    "start": "browser-sync main --files '**/*'"
+    "start": "browser-sync --files '**/*'"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7"

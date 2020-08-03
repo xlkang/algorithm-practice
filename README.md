@@ -11,9 +11,9 @@ yarn start # 运行browser-sync启动http server
 ## 目录
 
 - 第二章
-    1. [查询数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/main/findRepeatNum.js)
-    2. [查询数组中重复的数字(不修改数组)](https://github.com/xlkang/algorithm-practice/blob/master/main/findRepeatNumDontModify.js)
-    3. [查询二维数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/main/findTwoDigitArray.js)
-    4. [替换字符串中的空格](https://github.com/xlkang/algorithm-practice/blob/master/main/replaceSpaceOfString.js)
-    5. [高亮显示字符串中指定区间字符](https://github.com/xlkang/algorithm-practice/blob/master/main/highlightWordOfString.js)
-    6. [合并两个排序的数组](https://github.com/xlkang/algorithm-practice/blob/master/main/combineSortedArrays.js)
+    1. [查询数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/array/findRepeatNum.js)
+    2. [查询数组中重复的数字(不修改数组)](https://github.com/xlkang/algorithm-practice/blob/master/array/findRepeatNumDontModify.js)
+    3. [查询二维数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/array/findTwoDigitArray.js)
+    4. [合并两个排序的数组](https://github.com/xlkang/algorithm-practice/blob/master/array/combineSortedArrays.js)
+    5. [替换字符串中的空格](https://github.com/xlkang/algorithm-practice/blob/master/string/replaceSpaceOfString.js)
+    6. [高亮显示字符串中指定区间字符](https://github.com/xlkang/algorithm-practice/blob/master/string/highlightWordOfString.js)

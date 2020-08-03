@@ -5,7 +5,7 @@
  * 输入一个链表的头节点，从尾到头反过来打印出每个节点的值。
  */
 
-import { Node, LinkedList } from './dataStructure.js';
+import { Node, LinkedList } from '/dataStructure/linkedList.js';
 
 const linkedList = new LinkedList();
 const node1 = new Node('aaa');
@@ -21,7 +21,22 @@ node2.next = node3;
  * @param {Node} pNode 
  */
 function printLindedListfromEToS(pNode) {
-    console.log(pNode)
+    let node = pNode;
+    const nodeStack = []
+
+    while(node) {
+        nodeStack.push(node)
+        node = node.next
+    }
+
+    while(nodeStack.length){
+        const thisNode = nodeStack.pop();
+        printNode(thisNode)
+    }
+}
+
+function printNode(node) {
+    console.log(node.element)
 }
 
 printLindedListfromEToS(linkedList.head)
