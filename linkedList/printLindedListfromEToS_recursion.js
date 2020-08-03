@@ -3,6 +3,7 @@
  * 从尾到头打印链表
  * 
  * 输入一个链表的头节点，从尾到头反过来打印出每个节点的值。
+ * tips: 当链表太长时递归实现可能会导致调用栈溢出
  */
 
 import { Node, LinkedList } from '/dataStructure/linkedList.js';
@@ -28,12 +29,8 @@ function printNext (node){
     if(node.next) {
         printNext(node.next)
     }
-    printNode(node)
+    node.print()
     return
-}
-
-function printNode (node) {
-    console.log(node.element)
 }
 
 printLindedListfromEToS_recursion(linkedList.head)

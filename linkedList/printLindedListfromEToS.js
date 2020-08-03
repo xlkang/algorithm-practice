@@ -30,13 +30,8 @@ function printLindedListfromEToS(pNode) {
     }
 
     while(nodeStack.length){
-        const thisNode = nodeStack.pop();
-        printNode(thisNode)
+        nodeStack.pop().print();
     }
-}
-
-function printNode(node) {
-    console.log(node.element)
 }
 
 // printLindedListfromEToS(linkedList.head)

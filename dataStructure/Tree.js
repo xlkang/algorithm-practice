@@ -1,7 +1,7 @@
 /**
- * 实现链表
+ * 实现二叉树
  */
-export class LinkedList {
+export class BinaryTree {
     constructor() {
         this.head = new Node( 'head' );     //头节点
     }
@@ -10,19 +10,19 @@ export class LinkedList {
     insert () {}        // 插入节点
     remove () {}        // 删除节点
     findPrev () {}      // 查找前一个节点
-    display () {}       // 打印链表
 }
 /**
- * 实现链表节点
+ * 实现树节点
  */
-export class Node {
-    constructor(el){
-        this.element = el
-        this.next = null
+export class TreeNode {
+    constructor(data , left , right){
+        this.data = data;       // 数据
+        this.left = left;       // 左节点
+        this.right = right;     // 右节点
     }
 
     // 打印节点
     print () {
-        console.log(this.element)
+        console.log(this.data)
     }
 }
