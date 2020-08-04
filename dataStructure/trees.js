@@ -3,14 +3,19 @@
  */
 export class BinaryTree {
     constructor() {
-        this.head = new Node( 'head' );     //头节点
+        this.root = null;           //  根节点
     }
 
-    find () {}          // 查找节点
-    insert () {}        // 插入节点
-    remove () {}        // 删除节点
-    findPrev () {}      // 查找前一个节点
+    insert () {};       //  插入节点
+    preOrder () {};   //  先序遍历
+    inOrder () {};     //  中序遍历
+    postOrder () {}; //  后序遍历
+    find () {};           //  查找节点
+    getMin () {};       //  查找最小值
+    getMax () {};       //  查找最大值
+    remove () {};       //  删除节点
 }
+
 /**
  * 实现树节点
  */
