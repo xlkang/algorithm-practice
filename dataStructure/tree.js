@@ -19,7 +19,7 @@ export class BinaryTree {
 /**
  * 实现树节点
  */
-export class TreeNode {
+export class BinaryTreeNode {
     constructor(data , left , right){
         this.data = data;       // 数据
         this.left = left;       // 左节点
