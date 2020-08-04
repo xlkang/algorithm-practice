@@ -23,3 +23,6 @@ yarn start          # 运行browser-sync启动http server
 - 链表
     1. [从尾到头打印链表(栈实现)](https://github.com/xlkang/algorithm-practice/blob/master/linkedList/printLindedListfromEToS.js)
     2. [从尾到头打印链表(递归实现)](https://github.com/xlkang/algorithm-practice/blob/master/linkedList/printLindedListfromEToS_recursion.js)
+
+- 二叉树
+    1. [重建二叉树](https://github.com/xlkang/algorithm-practice/blob/master/tree/rebuildBinaryTree.js)
