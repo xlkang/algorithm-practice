@@ -24,6 +24,7 @@ export class BinaryTreeNode {
         this.data = data;       // 数据
         this.left = left;       // 左节点
         this.right = right;     // 右节点
+        this.parent = null;     // 父节点
     }
 
     // 打印节点
