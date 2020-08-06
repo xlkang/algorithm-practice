@@ -30,4 +30,5 @@ yarn start          # 运行browser-sync启动http server
 
 - 栈和队列
     1. [两个栈实现一个队列](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cQueueByTwoStacks.js)
+    2. [两个队列实现一个栈](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cStackByTwoQueues.js)
     
