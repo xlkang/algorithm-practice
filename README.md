@@ -28,3 +28,6 @@ yarn start          # 运行browser-sync启动http server
     1. [重建二叉树](https://github.com/xlkang/algorithm-practice/blob/master/tree/rebuildBinaryTree.js)
     2. [二叉树的下一个节点](https://github.com/xlkang/algorithm-practice/blob/master/tree/nextNodeOfBinaryTree.js)
 
+- 栈和队列
+    1. [两个栈实现一个队列](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cQueueByTwoStacks.js)
+    
