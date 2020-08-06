@@ -79,4 +79,4 @@ function findNextIsLeftChild (node) {
 }
 
 const nextNode = nextNodeOfBinaryTree(nodea)
-nextNode.print()
+// nextNode.print()
