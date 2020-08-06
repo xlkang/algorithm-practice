@@ -12,17 +12,17 @@ export class Queue {
     //出队
     dequeue () {
         if(this.empty()) return 'This queue is empty';
-        else return this.dataStore.shift();
+        return this.dataStore.shift();
     }
     // 查看队首元素
     front () {
         if(this.empty()) return 'This queue is empty';
-        else return this.dataStore[0];
+        return this.dataStore[0];
     }
     //查看队尾元素
     back () {
         if(this.empty()) return 'This queue is empty';
-        else return this.dataStore[this.dataStore.length - 1];
+        return this.dataStore[this.dataStore.length - 1];
     }
     // 显示队列所有元素
     toString () {
@@ -35,7 +35,7 @@ export class Queue {
     }
     //判断当前队列是否为空
     empty () {
-        if( this.dataStore.length === 0 ) return true;
-        else return false;
+        if(this.dataStore.length === 0) return true;
+        return false;
     }
 }
