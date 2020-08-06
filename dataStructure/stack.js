@@ -1,7 +1,7 @@
 /**
  * 实现栈
  */
-class Stack {
+export class Stack {
     constructor () {
         this.dataStore = [];    //初始化为空
         this.top = 0;           //记录栈顶位置

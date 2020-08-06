@@ -1,7 +1,7 @@
 /**
  * 实现队列
  */
-class Queue {
+export class Queue {
     constructor () {
         this.dataStore = [];
     }
