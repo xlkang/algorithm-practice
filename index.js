@@ -1,9 +1,4 @@
 
-const charMap = {
-    '[' : ']',
-    '{' : '}',
-}
-
 function get (json, search) {
     let pointer = 0;
     let key = "";
