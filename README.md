@@ -1,4 +1,4 @@
-# algorithm-practice
+# 算法练习
 《剑指offer》上的算法题练习，javascript实现
 
 ## 运行
@@ -8,7 +8,7 @@ yarn                # 安装依赖
 yarn start          # 运行browser-sync启动http server
 ```
 
-## 目录
+## 《剑指》原题
 
 - 数组
     1. [查询数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/array/findRepeatNum.js)
@@ -31,4 +31,7 @@ yarn start          # 运行browser-sync启动http server
 - 栈和队列
     1. [两个栈实现一个队列](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cQueueByTwoStacks.js)
     2. [两个队列实现一个栈](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cStackByTwoQueues.js)
-    
+
+## 应用题
+
+1. [根据取值规则字符串，从指定JSON对象取值](https://github.com/xlkang/algorithm-practice/blob/master/applications/getValueFromJson.js)
