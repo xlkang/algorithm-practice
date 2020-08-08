@@ -15,10 +15,9 @@
  * @description 求Fibonacci数列的第n项, 自下而上的循环解法, 复杂度O(n)
  * @param {Number} n
  */
-function getNOfFibonacciByCycle(n) {
-    count += 1
+function getNOfFibonacciByLoop(n) {
     if(typeof n !== 'number') throw Error('param must be a number')
-    if(typeof n < 0) throw Error('param must < 1')
+    if(typeof n < 0) throw Error('param must >= 0')
 
     if( n === 0) {
         return 0
@@ -38,5 +37,5 @@ function getNOfFibonacciByCycle(n) {
     return fibN
 }
 
-// const result = getNOfFibonacciByCycle(6)
+// const result = getNOfFibonacciByLoop(6)
 // console.log(result)

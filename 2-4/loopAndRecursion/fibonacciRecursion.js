@@ -19,7 +19,7 @@
 function getNOfFibonacciByRecursion(n) {
     count += 1
     if(typeof n !== 'number') throw Error('param must be a number')
-    if(typeof n < 0) throw Error('param must < 1')
+    if(typeof n < 0) throw Error('param must >= 0')
 
     if( n === 0) {
         return 0
