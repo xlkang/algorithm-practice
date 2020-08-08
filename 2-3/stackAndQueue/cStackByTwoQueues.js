@@ -48,7 +48,7 @@ class CStackByTwoQueues {
     }
 }
 
-const stack = new CStackByTwoQueues()
+// const stack = new CStackByTwoQueues()
 // stack.push('a')
 // stack.push('b')
 // console.log(stack.pop())

@@ -34,7 +34,7 @@ class CQueueByTwoStacks {
     }
 }
 
-const queue = new CQueueByTwoStacks()
+// const queue = new CQueueByTwoStacks()
 // queue.appendTail('s')
 // queue.appendTail('3')
 // queue.appendTail('4')

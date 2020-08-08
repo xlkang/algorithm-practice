@@ -10,7 +10,6 @@
  * f(n) = f(n-1)+f(n-2) // n > 1
  */
 
-let count = 0
 /**
  * getNOfFibonacciByRecursion
  * @description 求Fibonacci数列的第n项, 自下而上的循环解法, 复杂度O(n)
@@ -39,5 +38,5 @@ function getNOfFibonacciByCycle(n) {
     return fibN
 }
 
-const result = getNOfFibonacciByCycle(6)
-console.log(result)
+// const result = getNOfFibonacciByCycle(6)
+// console.log(result)

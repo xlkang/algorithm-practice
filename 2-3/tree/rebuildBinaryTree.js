@@ -62,7 +62,7 @@ function rebuildBinaryTree (preOrder, inOrder) {
     return node;
 }
 
-const root = rebuildBinaryTree(preOrder, inOrder)
+// const root = rebuildBinaryTree(preOrder, inOrder)
 // root.print()
 // root.left.print()
 // root.right.print()
