@@ -1,17 +1,17 @@
 /**
  * 《剑指》P77 面试题10
- * 题目二：青蛙跳台阶问题（Fibonacci）
+ * 题目二：青蛙跳台阶问题（Fibonacci） 扩展
  * 
- * 一只青蛙依次可以跳上1级台阶，也可以跳上2级台阶。
+ * 一只青蛙依次可以跳上1级台阶，也可以跳上2级台阶, 也可以跳上n级。。。。
  * 求该青蛙跳上一个n级台阶总共有多少种跳法。
  */
 
 /**
- * jumpSteps
- * @description 求跳n级台阶的跳法
+ * jumpStepsWithN
+ * @description 一次可以跳1～n级，求跳n级台阶的跳法
  * @param {Number} n
  */
-function jumpSteps(n) {
+function jumpStepsWithN(n) {
     if(typeof n !== 'number') throw Error('param must be a number')
     if(typeof n < 1) throw Error('param must >= 1')
 
@@ -33,5 +33,5 @@ function jumpSteps(n) {
     return fibN
 }
 
-// const result = jumpSteps(50)
+// const result = jumpStepsWithN(50)
 // console.log(result)
