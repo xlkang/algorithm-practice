@@ -39,7 +39,7 @@ yarn start          # 运行browser-sync启动http server
     2. [循环求fibonacci数列第n项](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/fibonacciLoop.js)
     3. [青蛙跳台阶问题](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/jumpSteps.js)
     4. [可以跳1～n级的青蛙跳台阶问题](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/jumpStepsWithN.js)
-    5. [2*1矩形覆盖2*n矩形](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/coverRectangle.js)
+    5. [2乘1矩形覆盖2乘n矩形](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/coverRectangle.js)
 
 ## 应用题
 
