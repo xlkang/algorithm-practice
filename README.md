@@ -8,7 +8,7 @@ yarn                # 安装依赖
 yarn start          # 运行browser-sync启动http server
 ```
 
-## 《剑指》原题
+## 2.3 数据结构
 
 - 数组
     1. [查询数组中重复的数字](https://github.com/xlkang/algorithm-practice/blob/master/array/findRepeatNum.js)
@@ -31,6 +31,10 @@ yarn start          # 运行browser-sync启动http server
 - 栈和队列
     1. [两个栈实现一个队列](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cQueueByTwoStacks.js)
     2. [两个队列实现一个栈](https://github.com/xlkang/algorithm-practice/blob/master/stackAndQueue/cStackByTwoQueues.js)
+
+## 2.4 循环和递归
+
+1. [递归求fibonacci数列第n项](https://github.com/xlkang/algorithm-practice/blob/master/2-4-loopAndRecursion/fibonacciRecursion.js)
 
 ## 应用题
 

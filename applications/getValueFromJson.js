@@ -50,4 +50,4 @@ const json = {
     x: 1
 }
 
-console.log('result ===', get(json, "a[0].c[1].y"))
+// console.log('result ===', get(json, "a[0].c[1].y"))
