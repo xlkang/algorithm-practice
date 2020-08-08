@@ -35,6 +35,7 @@ yarn start          # 运行browser-sync启动http server
 ## 2.4 循环和递归
 
 1. [递归求fibonacci数列第n项](https://github.com/xlkang/algorithm-practice/blob/master/2-4-loopAndRecursion/fibonacciRecursion.js)
+1. [循环求fibonacci数列第n项](https://github.com/xlkang/algorithm-practice/blob/master/2-4-loopAndRecursion/fibonacciCycle.js)
 
 ## 应用题
 

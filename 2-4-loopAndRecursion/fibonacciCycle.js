@@ -1,5 +1,5 @@
 /**
- * 《剑指》P74 面试题10 递归解法
+ * 《剑指》P74 面试题10 循环解法
  * Fibonacci数列
  * 
  * 求Fibonacci数列的第n项
@@ -10,26 +10,33 @@
  * f(n) = f(n-1)+f(n-2) // n > 1
  */
 
- let count = 0
+let count = 0
 /**
  * getNOfFibonacciByRecursion
- * @description 求Fibonacci数列的第n项, 自上而下递归解法, 复杂度O(n^2)
+ * @description 求Fibonacci数列的第n项, 自下而上的循环解法, 复杂度O(n)
  * @param {Number} n
  */
-function getNOfFibonacciByRecursion(n) {
+function getNOfFibonacciByCycle(n) {
     count += 1
     if(typeof n !== 'number') throw Error('param must be a number')
     if(typeof n < 0) throw Error('param must < 1')
+
+    let f = [0,1];
+    let result;
 
     if( n === 0) {
         return 0
     } else if(n === 1) {
         return 1
     } else if(n > 1) {
-        return getNOfFibonacciByRecursion(n-1) + getNOfFibonacciByRecursion(n-2)
+        for(let i=2;i<=n;i++){
+            f[i] =  f[i-1] + f[i-2]
+        }
+        result = f[n]
     }
+
+    return result
 }
 
-// const result = getNOfFibonacciByRecursion(5)
-// console.log("计算次数====", count)
-// console.log(result)
+const result = getNOfFibonacciByCycle(30)
+console.log(result)
