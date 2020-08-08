@@ -21,22 +21,23 @@ function getNOfFibonacciByCycle(n) {
     if(typeof n !== 'number') throw Error('param must be a number')
     if(typeof n < 0) throw Error('param must < 1')
 
-    let f = [0,1];
-    let result;
-
     if( n === 0) {
         return 0
     } else if(n === 1) {
         return 1
-    } else if(n > 1) {
-        for(let i=2;i<=n;i++){
-            f[i] =  f[i-1] + f[i-2]
-        }
-        result = f[n]
+    }
+    let fibOne = 1
+    let fibTwo = 0
+    let fibN = 0
+    
+    for(let i=2;i<=n;i++){
+        fibN = fibOne + fibTwo
+        fibTwo = fibOne
+        fibOne = fibN
     }
 
-    return result
+    return fibN
 }
 
-const result = getNOfFibonacciByCycle(30)
+const result = getNOfFibonacciByCycle(6)
 console.log(result)
