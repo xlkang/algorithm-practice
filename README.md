@@ -43,6 +43,7 @@ yarn start          # 运行browser-sync启动http server
 
  - 查找和排序
     1. [快速排序](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/quickSort.js)
+    2. [旋转数组的最小数字](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/minNumInRotateArray.js)
 
 ## 应用题
 
