@@ -41,6 +41,9 @@ yarn start          # 运行browser-sync启动http server
     4. [可以跳1～n级的青蛙跳台阶问题](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/jumpStepsWithN.js)
     5. [2乘1矩形覆盖2乘n矩形](https://github.com/xlkang/algorithm-practice/blob/master/2-4/loopAndRecursion/coverRectangle.js)
 
+ - 查找和排序
+    1. [快速排序](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/quickSort.js)
+
 ## 应用题
 
 1. [根据取值规则字符串，从指定JSON对象取值](https://github.com/xlkang/algorithm-practice/blob/master/applications/getValueFromJson.js)
