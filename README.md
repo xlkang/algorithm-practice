@@ -1,4 +1,5 @@
 # 算法练习
+![Project Version](https://img.shields.io/github/package-json/v/xlkang/algorithm-practice)
 《剑指offer》上的算法题练习，javascript实现
 
 ## 运行
