@@ -76,5 +76,5 @@ function hasPath(matrix, path) {
     return false;
 }
 
-const result = hasPath(matrix, path)
-console.log(result)
+// const result = hasPath(matrix, path)
+// console.log(result)
