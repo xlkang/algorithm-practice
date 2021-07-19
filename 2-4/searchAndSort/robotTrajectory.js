@@ -25,13 +25,52 @@
 /**
  * pathInMatrix
  * @description 矩阵中的路径
- * @param {Array} 矩阵
- * @param {String} 路径
+ * @param {number} 行数
+ * @param {number} 列数
+ * @param {number} 数位之和阈值
  * @returns {Boolean} 是否查到路径
  */
-function robotTrajectory(matrix, path) {
-    
+function robotTrajectory(rows, cols, k) {
+  let result = 0
+  let current = [0, 0]
+  let matrix = []
+  for(let i = 0;i<cols;i++){
+    matrix.push([])
+  }
+
+  function getDigitSum(num) {
+    let sum = 0;
+    while(num > 0) {
+      sum += num % 10 
+      num = Math.floor(num / 10)
+    }
+
+    return sum
+  }
+
+  function checkThreshold (i, j, k) {
+    return getDigitSum(i) + getDigitSum(j) <= k
+  }
+
+  function movingCountCore(m, n, i, j, k) {
+    if(i < 0 || j < 0 || i > m - 1 || j > n - 1) return 0
+
+    // 未访问 四周的到达数目 + 1
+    if(!matrix[i][j] && checkThreshold(i, j, k)) {
+      matrix[i][j] = true
+
+      return movingCountCore(m, n, i + 1, j, k) + 
+          movingCountCore(m, n, i, j + 1, k) + 
+          movingCountCore(m, n, i - 1, j, k) + 
+          movingCountCore(m, n, i, j - 1, k) + 1
+    }
+
+    // 已访问 0
+    return 0
+  }
+
+  return movingCountCore(rows, cols, 0, 0, k)
 }
 
-// const result = hasPath(matrix, path)
+// const result = robotTrajectory(6, 8, 2)
 // console.log(result)
