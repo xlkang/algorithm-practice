@@ -11,19 +11,8 @@
  */
 
 
- /** 
-  * a[x][y]  矩阵 左上角为坐标系原点
-  * 
-  * a b t g  
-  * c f c s
-  * j d e h
-  */
-
- const matrix = [['a', 'c', 'j'], ['b', 'f', 'd'], ['t', 'c', 'e'], ['g', 's', 'h']]
- const path = 'bfde'
-
 /**
- * pathInMatrix
+ * robotTrajectory
  * @description 矩阵中的路径
  * @param {number} 行数
  * @param {number} 列数
