@@ -13,11 +13,12 @@
 
 /**
  * robotTrajectory
- * @description 矩阵中的路径
+ * @description 机器人的运动轨迹
  * @param {number} 行数
  * @param {number} 列数
  * @param {number} 数位之和阈值
- * @returns {Boolean} 是否查到路径
+ * 
+ * @returns {number} 可访问格子数
  */
 function robotTrajectory(rows, cols, k) {
   let result = 0
