@@ -51,6 +51,7 @@ yarn start          # 运行browser-sync启动http server
     3. [回溯法：矩阵中的路径](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/pathInMatrix.js)
     4. [回溯法：机器人的运动范围](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/robotTrajectory.js)
 
+    5. [回溯法（补充）：全排列](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/backtrack.js)
     5. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
 
     [回溯算法套路详解](https://zhuanlan.zhihu.com/p/93530380)
