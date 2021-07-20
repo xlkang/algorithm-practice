@@ -47,6 +47,7 @@ function robotTrajectory(rows, cols, k) {
 
     // 未访问 四周的到达数目 + 1
     if(!matrix[i][j] && checkThreshold(i, j, k)) {
+      // 递归之前做选择
       matrix[i][j] = true
 
       return movingCountCore(m, n, i + 1, j, k) + 
@@ -55,6 +56,7 @@ function robotTrajectory(rows, cols, k) {
           movingCountCore(m, n, i, j - 1, k) + 1
     }
 
+    // 递归之后撤回选择
     // 已访问 0
     return 0
   }
