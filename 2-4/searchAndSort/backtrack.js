@@ -2,6 +2,8 @@
  * 回溯法
  * 
  * 全排列
+ * 
+ * 复杂度O(n^2 * n!)
  */
 
 /**
@@ -49,15 +51,13 @@ function solution(nums) {
     for(let i = 0; i < nums.length; i++) {
       if(tracks.includes(nums[i])) continue;
 
-      //记录路径
+      // 记录路径
       tracks.push(nums[i])
       //进入下一个节点
       backtrack(nums)
       // 退出下一个节点，删除路径
       tracks.pop()
     }
-
-    return
   }
 
   backtrack()
@@ -65,5 +65,5 @@ function solution(nums) {
   return result
 }
 
-const result = solution([1,2,3])
-console.log(result)
+// const result = solution([1,2,3])
+// console.log(result)

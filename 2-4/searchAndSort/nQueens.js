@@ -11,29 +11,6 @@
  * 求坐标
  */
 
- function check(row, column, size, queens) {
-   console.log("check", queens)
-  // 检查行列
-  for(let k = 0; k < size; k++) {
-    if(queens[k][column] === 'Q') return false
-  }
-      
-  // 检查主对角线  
-  for(let i = 0; i < size; i++) {
-    let j = row + column - i;
-    
-    if(i !== row && queens[i][j] === 'Q') return false
-  }
-
-  // 检查副对角线  
-  for(let i = 0; i < size; i++) {
-    let j = column - row + i;
-    if(i !== row && queens[i][j] === 'Q') return false
-  }
-
-  return true
-}
-
 /**
  * getNQueenCount
  * @description N皇后问题
@@ -42,50 +19,72 @@
  * @returns {number} 可访问格子数
  */
 function getNQueenCount(size = 4) {
-  let queens = []
   let result = []
+  let queens = []
   let count = 0
+
   let i = 0
   while(i < size) {
     queens.push([])
+    let j = 0
+    while(j < size) {
+      queens[i].push('.')
+      j++
+    }
     i++
   }
 
-  function findQueen(row, queens) {
-    if(row > size - 1) {
+  function check(row, col, size) {
+    // 检查列
+    for(let k = 0; k < size; k++) {
+      if(queens[k][col] === 'Q') return false
+    }
+        
+    // 检查主对角线  
+    for(let i = 0; i < size; i++) {
+      let j = row + col - i;
+      
+      if(queens[i][j] === 'Q') return false
+    }
+  
+    // 检查副对角线  
+    for(let i = 0; i < size; i++) {
+      let j = col - row + i;
+      if(queens[i][j] === 'Q') return false
+    }
+  
+    return true
+  }
+
+  function findQueen(row) {
+    if(row === size) {
       // 8行选择结束，记录一个count
       count += 1
-      console.log(queens)
-      result.push(queens)
+      let i = 0;
+      let path = []
+      while(i < size) {
+        path.push(queens[i].join(""))
+        i++
+      }
+      console.log("path", path)
+      result.push(path)
       return;
     }
     
     // 列循环
-    for(let j = 0; j < size; j++) {
-      if(!queens[row][j] && check(row, j, size, queens)) {
-        // 做选择
-        queens[row][j] = 'Q'
+    for(let col = 0; col < size; col++) {
+      // 排除可以互相攻击的棋子
+      if(!check(row, col, size)) continue;
 
-        // let path = []
-        // for(let k = 0; k < size; k++) {
-        //   if(k === j) {
-        //     path.push("Q")
-        //   } else {
-        //     path.push(".")
-        //   }
-        // }
-
-        // result[row] = path.join("")
-        
-        findQueen(row + 1, queens)
-        queens[row][j] = '.'
-      }
-      // 取消选择
-      // temp[row][j] = 0
+      // 做选择
+      queens[row][col] = 'Q'
+      findQueen(row + 1)
+      // 撤销选择
+      queens[row][col] = '.'
     }
   }
 
-  findQueen(0, queens)
+  findQueen(0)
 
   return {
     count,
@@ -93,5 +92,5 @@ function getNQueenCount(size = 4) {
   }
 }
 
-// const result = getNQueenCount(4)
-// console.log(result)
+const result = getNQueenCount(4)
+console.log(result)
