@@ -92,5 +92,5 @@ function getNQueenCount(size = 4) {
   }
 }
 
-const result = getNQueenCount(4)
-console.log(result)
+// const result = getNQueenCount(4)
+// console.log(result)
