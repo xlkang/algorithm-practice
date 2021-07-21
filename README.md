@@ -52,12 +52,12 @@ yarn start          # 运行browser-sync启动http server
     4. [回溯法：机器人的运动范围](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/robotTrajectory.js)
 
     5. [回溯法（补充）：全排列](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/backtrack.js)
-    5. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
+    6. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
 
     [回溯算法套路详解](https://zhuanlan.zhihu.com/p/93530380)
     [深入探究回溯算法](https://zhuanlan.zhihu.com/p/383209384)
 
-  - 动态规划和贪心算法
+    7. [剪绳子：动态规划 & 贪心](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/dynamicAndGreedy.js)
 
 ## 应用题
 
