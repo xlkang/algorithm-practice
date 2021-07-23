@@ -17,14 +17,18 @@
 /**
  * 思路解析：
  * 当剪第一刀的时候，有n-1种可能的选择
+ * 
  * f(n) = max(f(i) * f(n - i)) (其中： 0<i<n)
  * f(2) = 1   1*1
  * f(3) = 2   2*1 > 1*1*1
  * f(4) = 3   3*1 > 1*1 
  */
 
+
+// dp函数定义 f(n) = max(f(i) * f(n - i))
 // 动态规划
 function maxProduct_dynamic (len) {
+  // 初始化base case
     if(len < 2) return 0;
     if(len === 2) return 1;
     if(len === 3) return 2;
@@ -32,13 +36,18 @@ function maxProduct_dynamic (len) {
     let products = [0, 1, 2, 3]
     let max = 0;
     
+    // 两个for循环 穷举状态 （f(i)）
     for(let i = 4; i <= len; i++) {
-      console.log("i==", i)
+      // 自下向上计算 f(4),f(5),....
+      // 计算状态f(i)
       let _max = 0;
 
       for(let j = 1;j <= i/2; j++) {
-        // 切
-        let product = products[j] * products[i - j]
+        // 二分开始切
+
+        // 状态 f(i)
+        let product = products[j] * products[i - j] // 进行状态转移
+        // 选择 作出最优选择
         if(product > _max) {
           _max = product
         }
@@ -59,5 +68,5 @@ function maxProduct_greedy (len) {
 }
 
 
-const result = maxProduct_dynamic(10)
-console.log(result)
+// const result = maxProduct_dynamic(10)
+// console.log(result)
