@@ -13,10 +13,16 @@
  let count = 0
 /**
  * getNOfFibonacciByRecursion
- * @description 求Fibonacci数列的第n项, 自上而下递归解法, 复杂度O(n^2)
+ * @description 求Fibonacci数列的第n项, 自上而下递归解法, 复杂度O(2^n)
  * @param {Number} n
  */
+/**
+ * 备忘录优化
+ * 
+ * O(2^n) -> O(n), 需要一个空间O(n)的数组
+ */
 function getNOfFibonacciByRecursion(n) {
+    // 递归函数调用次数是递归树的节点数
     count += 1
     if(typeof n !== 'number') throw Error('param must be a number')
     if(typeof n < 0) throw Error('param must >= 0')

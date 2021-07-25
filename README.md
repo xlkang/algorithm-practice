@@ -59,6 +59,11 @@ yarn start          # 运行browser-sync启动http server
 
     7. [剪绳子：动态规划 & 贪心](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/dynamicAndGreedy.js)
 
+## 动态规划专题
+
+1. [最大连续子序和](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxSubArray.js)
+2. [最小编辑距离](https://github.com/xlkang/algorithm-practice/blob/master/dp/minDistance.js)
+
 ## 应用题
 
 1. [根据取值规则字符串，从指定JSON对象取值](https://github.com/xlkang/algorithm-practice/blob/master/applications/getValueFromJson.js)

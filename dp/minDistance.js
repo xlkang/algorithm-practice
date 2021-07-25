@@ -46,6 +46,5 @@
   return dp[s1.length][s2.length]
 };
 
-
-const result = minDistance("horse", "ros")
-console.log(result)
+// const result = minDistance("horse", "ros")
+// console.log(result)
