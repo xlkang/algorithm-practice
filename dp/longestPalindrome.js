@@ -84,10 +84,10 @@ function longestPalindrome_dp (s) {
  const case1 = "aaaa"
 //  const result1 = longestPalindrome_exhaustion(case1)
 //  const result2 = longestPalindrome_exhaustion_memo(case1)
- const result3 = longestPalindrome_dp(case1)
+//  const result3 = longestPalindrome_dp(case1)
  // console.log("count1===", count1)
  // console.log("count2===", count2)
  
- console.log(result3)
+//  console.log(result3)
 //  console.log(result2)
 //  console.log(result3)

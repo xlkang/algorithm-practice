@@ -65,6 +65,7 @@ yarn start          # 运行browser-sync启动http server
 2. [最小编辑距离](https://github.com/xlkang/algorithm-practice/blob/master/dp/minDistance.js)
 3. [爬楼梯](https://github.com/xlkang/algorithm-practice/blob/master/dp/climbStairs.js)
 4. [最小回文子串](https://github.com/xlkang/algorithm-practice/blob/master/dp/longestPalindrome.js)
+5. [买卖股票的最佳时机](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxProfit.js)
 
 ## 应用题
 
