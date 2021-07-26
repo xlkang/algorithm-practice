@@ -67,12 +67,12 @@ function climbStairs_dp (n) {
 
 
 const case1 = 30
-const result1 = climbStairs_exhaustion(case1)
-const result2 = climbStairs_exhaustion_memo(case1)
-const result3 = climbStairs_dp(case1)
+// const result1 = climbStairs_exhaustion(case1)
+// const result2 = climbStairs_exhaustion_memo(case1)
+// const result3 = climbStairs_dp(case1)
 // console.log("count1===", count1)
 // console.log("count2===", count2)
 
-console.log(result1)
-console.log(result2)
-console.log(result3)
+// console.log(result1)
+// console.log(result2)
+// console.log(result3)
