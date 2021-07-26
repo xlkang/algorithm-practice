@@ -87,12 +87,33 @@ function maxProfit_dp (prices) {
 
   return dp[len - 1][0]
 };
+
+function maxProfit_dp2 (prices) {
+  // dp[i] 表示下标为 i 这一天卖出可以获得的的最大收益。
+  let len = prices.length
+  if(len < 2) return 0;
+  const dp = []
+  let res = 0;
+  // 前一天卖出可以获得的最大利润
+  let pre = 0;
+
+  for(let i = 1;i < len;i++) {
+    // 利润差 第i天价格 - (i-1)天价格
+    let diff = prices[i] - prices[i-1]
+
+    // dp[i - 1] + 利润差 如果大于 0 说明
+    pre = Math.max(pre + diff, 0)
+    res = Math.max(pre, res)
+  }
+
+  return res
+};
  
  
  const case1 = [7,1,5,3,6,4]
 //  const result1 = maxProfit_exhaustion(case1)
 //  const result2 = maxProfit_exhaustion_memo(case1)
- const result = maxProfit_dp(case1)
+ const result = maxProfit_dp2(case1)
  // console.log("count1===", count1)
  // console.log("count2===", count2)
  
