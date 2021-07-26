@@ -130,5 +130,5 @@ const case1 = [-2,1,-3,4,-1,2,1,-5,4]
 // const result = maxSubArray_exhaustion(case1)
 // const result2 = maxSubArray_exhaustion_memo(case1)
 // const result3 = maxSubArray_dp(case1)
-const result4 = maxSubArray_dp_optimization(case1)
-console.log(result4)
+// const result4 = maxSubArray_dp_optimization(case1)
+// console.log(result4)
