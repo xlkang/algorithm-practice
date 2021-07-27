@@ -110,13 +110,13 @@ function maxProfit_dp2 (prices) {
 };
  
  
- const case1 = [7,1,5,3,6,4]
+//  const case1 = [7,1,5,3,6,4]
 //  const result1 = maxProfit_exhaustion(case1)
 //  const result2 = maxProfit_exhaustion_memo(case1)
- const result = maxProfit_dp2(case1)
+//  const result = maxProfit_dp2(case1)
  // console.log("count1===", count1)
  // console.log("count2===", count2)
  
- console.log(result)
+//  console.log(result)
 //  console.log(result2)
 //  console.log(result3)

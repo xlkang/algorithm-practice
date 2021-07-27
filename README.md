@@ -50,13 +50,8 @@ yarn start          # 运行browser-sync启动http server
     2. [旋转数组的最小数字](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/minNumInRotateArray.js)
     3. [回溯法：矩阵中的路径](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/pathInMatrix.js)
     4. [回溯法：机器人的运动范围](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/robotTrajectory.js)
-
     5. [回溯法（补充）：全排列](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/backtrack.js)
     6. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
-
-    [回溯算法套路详解](https://zhuanlan.zhihu.com/p/93530380)
-    [深入探究回溯算法](https://zhuanlan.zhihu.com/p/383209384)
-
     7. [剪绳子：动态规划 & 贪心](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/dynamicAndGreedy.js)
 
 ## 动态规划专题
@@ -66,6 +61,7 @@ yarn start          # 运行browser-sync启动http server
 3. [爬楼梯](https://github.com/xlkang/algorithm-practice/blob/master/dp/climbStairs.js)
 4. [最小回文子串](https://github.com/xlkang/algorithm-practice/blob/master/dp/longestPalindrome.js)
 5. [买卖股票的最佳时机](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxProfit.js)
+6. [买卖股票的最佳时机2（多次买卖）](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxProfit2.js)
 
 ## 应用题
 
