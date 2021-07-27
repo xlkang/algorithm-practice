@@ -54,7 +54,7 @@ function solution(nums) {
       // 记录路径
       tracks.push(nums[i])
       //进入下一个节点
-      backtrack(nums)
+      backtrack()
       // 退出下一个节点，删除路径
       tracks.pop()
     }
