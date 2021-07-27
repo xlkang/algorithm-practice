@@ -60,11 +60,6 @@ function maxProfit2_exhaustion (prices) {
           }
           backtrack(arr.slice(i+1), k)
         }
-        // if(cash + prices[i] > 0) {
-        //   // 卖出
-        //   cash = cash + prices[i]
-        //   backtrack(arr.slice(i+1), 0)
-        // }
       }
     }
   }
@@ -78,18 +73,35 @@ function maxProfit2_exhaustion_memo (prices) {
 };
  
 function maxProfit2_dp (prices) {
+  let len = prices.length;
+  if (len < 2) {
+      return 0;
+  }
 
-};
+  // cash：持有现金
+  // hold：持有股票
+  // 状态数组
+  // 状态转移：cash → hold → cash → hold → cash → hold → cash
+  let cash = [];
+  let hold = [];
 
-function maxProfit_dp2 (prices) {
+  cash[0] = 0;
+  hold[0] = -prices[0];
 
+  for (let i = 1; i < len; i++) {
+      // 这两行调换顺序也是可以的
+      cash[i] = Math.max(cash[i - 1], hold[i - 1] + prices[i]);
+      hold[i] = Math.max(hold[i - 1], cash[i - 1] - prices[i]);
+  }
+
+  return cash[len - 1];
 };
  
  
-// const case1 = [7,1,5,3,6,4]
-//  const result1 = maxProfit_exhaustion(case1)
+const case1 = [7,1,5,3,6,4]
+//  const result = maxProfit2_exhaustion(case1)
 //  const result2 = maxProfit_exhaustion_memo(case1)
-// const result = maxProfit2_exhaustion(case1)
+// const result = maxProfit2_dp(case1)
 // console.log("count1===", count1)
 // console.log("count2===", count2)
  
@@ -97,25 +109,5 @@ function maxProfit_dp2 (prices) {
 //  console.log(result2)
 //  console.log(result3)
 
-/**
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number}
- */
- var findMedianSortedArrays = function(nums1, nums2) {
-  const nums = nums1.concat(nums2).sort((a, b) => {
-    return a < b ? -1 : 0
-  })
-  console.log(nums)
-  const middle = nums.length/ 2 // 1.5
-  const intMiddle = parseInt(middle) // 1
-  console.log(intMiddle)
-  if( middle == intMiddle) {
-      return (nums[intMiddle - 1] + nums[intMiddle])/2
-  } else {
-      return nums[intMiddle]
-  }
-};
-
-const result = findMedianSortedArrays([3], [-2, -1])
-console.log(result)
+// const result = findMedianSortedArrays([3], [-2, -1])
+// console.log(result)

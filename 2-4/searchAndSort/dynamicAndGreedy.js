@@ -28,11 +28,11 @@
 // dp函数定义 f(n) = max(f(i) * f(n - i))
 // 动态规划
 function maxProduct_dynamic (len) {
-  // 初始化base case
     if(len < 2) return 0;
     if(len === 2) return 1;
     if(len === 3) return 2;
 
+    // 初始化base case
     let products = [0, 1, 2, 3]
     let max = 0;
     

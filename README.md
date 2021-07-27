@@ -66,3 +66,4 @@ yarn start          # 运行browser-sync启动http server
 ## 应用题
 
 1. [根据取值规则字符串，从指定JSON对象取值](https://github.com/xlkang/algorithm-practice/blob/master/applications/getValueFromJson.js)
+2. [构建区域树](https://github.com/xlkang/algorithm-practice/blob/master/applications/region.js)
