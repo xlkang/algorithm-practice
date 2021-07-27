@@ -54,7 +54,7 @@ yarn start          # 运行browser-sync启动http server
     6. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
     7. [剪绳子：动态规划 & 贪心](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/dynamicAndGreedy.js)
 
-## 动态规划专题
+## 动态规划
 
 1. [最大连续子序和](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxSubArray.js)
 2. [最小编辑距离](https://github.com/xlkang/algorithm-practice/blob/master/dp/minDistance.js)
