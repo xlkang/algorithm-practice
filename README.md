@@ -63,6 +63,10 @@ yarn start          # 运行browser-sync启动http server
 5. [买卖股票的最佳时机](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxProfit.js)
 6. [买卖股票的最佳时机2（多次买卖）](https://github.com/xlkang/algorithm-practice/blob/master/dp/maxProfit2.js)
 
+## 贪心
+
+1. [剪绳子](https://github.com/xlkang/algorithm-practice/blob/master/greedy/cuttingRope.js)
+
 ## 应用题
 
 1. [根据取值规则字符串，从指定JSON对象取值](https://github.com/xlkang/algorithm-practice/blob/master/applications/getValueFromJson.js)
