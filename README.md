@@ -53,6 +53,12 @@ yarn start          # 运行browser-sync启动http server
     5. [回溯法（补充）：全排列](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/backtrack.js)
     6. [回溯法（补充）：N皇后](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/nQueens.js)
     7. [剪绳子：动态规划 & 贪心](https://github.com/xlkang/algorithm-practice/blob/master/2-4/searchAndSort/dynamicAndGreedy.js)
+   
+
+
+## 3.3 代码的完整性
+
+1. [数值的整数次方](https://github.com/xlkang/algorithm-practice/blob/master/3-3/power.js)
 
 ## 动态规划
 

@@ -35,5 +35,5 @@ function maxProduct_greedy (len) {
 }
 
 
-const result = maxProduct_greedy(10)
-console.log(result)
+// const result = maxProduct_greedy(10)
+// console.log(result)
