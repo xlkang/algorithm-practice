@@ -7,10 +7,10 @@
  */
 
 /**
- * quickSort
- * @description 快速排序
- * @param {Array} 待排序数组
- * @returns {Array} 排序后的数组
+ * power
+ * @description 数值的整数次方
+ * @param {number} 底数
+ * @returns {number} 指数
  */
 function power(base, exponent) {
     if(typeof base !== "number") throw new Error("base must be Number")
@@ -28,6 +28,12 @@ function power(base, exponent) {
     return exponent > 0 ? res : 1/res
 }
 
+/**
+ * 当n(指数)为偶数时 a^n = a^(n/2) * a^(n/2)
+ * 当n(指数)为奇数时 a^n = a^((n-1)/2) * a^((n-1)/2) * n
+ * 
+ * 利用这个公式，可以使用递归优化，复杂度为O(logn)
+ */
 function power_optimization(base, exponent) {
     if(typeof base !== "number") throw new Error("base must be Number")
     if(typeof exponent !== "number") throw new Error("exponent must be Number")
